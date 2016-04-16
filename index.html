@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>PacGongo 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <meta name="description" content="FRC Team 5112, The Gongoliers, presents: PacGongo 2">
+  <link rel="manifest" href="manifest.json">
+  <style media="screen">
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: lightgreen;
+    }
+
+    .main {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    .main h5,
+    .main img {
+      color: white;
+      margin: 16px;
+      vertical-align: middle;
+    }
+
+    .main img {
+      height: 24px;
+      padding-left: 24px;
+    }
+
+    #one,
+    #two {
+      margin: 0;
+    }
+
+    #one {
+      margin-left: 16px;
+    }
+
+    .main h5 {
+      font-size: 32px;
+      padding-left: 24px;
+      display: inline-block;
+    }
+
+    #volume {
+      display: inline-block;
+      padding-right: 16px;
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main" style="width: 448px; height: 650px; background-color:green;">
+    <canvas id="game" height="496px" width="448px">Canvas not supported</canvas>
+    <h5 id="score">SCORE: 0</h5>
+    <img src="res/volume_on.png" alt="volume" id="volume" />
+    <br>
+    <img src="res/pacgongo.png" alt="life" id="one" />
+    <img src="res/pacgongo.png" alt="life" id="two" />
+  </div>
+
+  <img id="pacgongo" src="res/pacgongo.png" style="display:none;" />
+  <img id="ghostcoffey" src="res/ghostcoffey.png" style="display:none;" />
+  <img id="ghostcoffey-scare" src="res/ghostcoffey_scare.png" style="display:none;" />
+  <img id="hat" src="res/hat.png" style="display:none;" />
+  <script src="buffer-loader.js"></script>
+  <script src="pathfinding-browser.min.js" charset="utf-8"></script>
+  <script src="map.js"></script>
+  <script src="pacgongo.js"></script>
+  <script src="ghost.js"></script>
+  <script src="game.js"></script>
+
+</html>

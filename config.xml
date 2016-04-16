@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.kylecorry.gongoliers.pacgongo"
+        versionCode = "1"
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Pacgongo</name>
+
+    <description>
+        A Pacman like game from FRC Team 5112, The Gongoliers.
+    </description>
+
+    <author href="http://www.thegongoliers.com" email="kylecorry31@gmail.com">
+        Kyle Corry
+    </author>
+
+    <platform name="android">
+      <preference name="orientation" value="portrait"/>
+    </platform>
+
+</widget>
